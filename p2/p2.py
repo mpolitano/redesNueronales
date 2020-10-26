@@ -3,8 +3,6 @@ import numpy as np
 import time
 import pylab 
 
-#https://mat.caminos.upm.es/wiki/Modelo_Depredador-Presa_de_Lotka-Volterra_(grupo_16)
-
 class IF_Neuron:
     
     def __init__(self, Vrest, Vth, tau, R, i):
@@ -15,10 +13,7 @@ class IF_Neuron:
         self.current = i
     
     def V(self, V):
-        return (self.Vrest - V + self.R * self.I())/self.tau     
-    def V1(self, V):
-        return (self.Vrest - V + self.R * self.I())/self.tau  
-        R * I[i] *(1 - np.exp((-(t-t0)/t_m)))    
+        return (self.Vrest - V + self.R * self.I())/self.tau       
     
     def I(self):
         return self.current
